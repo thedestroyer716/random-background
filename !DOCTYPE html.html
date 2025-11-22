@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Random Background</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+</style>
+</head>
+<body>
+<script>
+  const images = [
+    "https://cdn.wallpapersafari.com/30/0/n0HOqk.gif",
+    "https://cdnb.artstation.com/p/assets/images/images/052/004/767/original/yurii-ray-06-gif-export-200.gif?1658731969",
+    "https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyY2ZmdzgzbDNpaHVvZ2l5Ym15OWx2Z2gwYnN0cnRocTByN2RyaHkzbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gH1jGsCnQBiFHWMFzh/200.gif",
+    "https://cdn.wallpapersafari.com/64/56/Gual6b.gif",
+    "https://i.imgur.com/LVKvjL6.gif",
+    "https://giffiles.alphacoders.com/215/215982.gif",
+    "https://mir-s3-cdn-cf.behance.net/project_modules/fs/9c3404112981173.601ebcc1dba2d.gif",
+    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3bf11a8a-c6c8-49be-8fdf-017dcc152a49/dhbmxis-4a06b8af-4f8c-44b3-9a59-f8ecbbf8c07c.gif",
+    "https://giffiles.alphacoders.com/215/215462.gif",
+    "https://userstyles.org/style_screenshots/215165_after.gif?r=1762632017"
+  ];
+
+  const pick = images[Math.floor(Math.random() * images.length)];
+  document.body.style.backgroundImage = "url('" + pick + "')";
+</script>
+</body>
+</html>
